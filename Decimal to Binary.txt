@@ -1,0 +1,24 @@
+
+num=int(input("enter a number greater than 0 "))
+
+if num>0:
+    binary=bin(num)[2:]    
+    binary='0'*(8-len(binary))+binary# מדפיס את השרשרת של 0 אחרי הייצוג
+    print("The binary representation of:{} is {}".format(num,binary))
+    
+    negative=bin((num^0xFF)+1)[2:]
+    negative='0'*(8-len(negative))+negative
+    print("negative representation: {}".format(negative))
+else:
+    print("error")
+
+
+
+    
+
+
+
+
+
+
+    
